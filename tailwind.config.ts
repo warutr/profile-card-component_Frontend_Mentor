@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,11 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        "Dark-cyan": "hsl(185, 75%, 39%)",
+        "Very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
+        "Dark-grayish-blue": "hsl(227, 10%, 46%)",
+        "Darkg-rayish": "hsl(0, 0%, 59%)",
       },
+    },
+    backgroundImage: {
+      "dasktop-top": "url(/images/bg-pattern-top.svg)",
+      "dasktop-bottom":"url(/images/bg-pattern-top.svg)",
+      "card":"url(/images/bg-pattern-card.svg)",
     },
   },
   plugins: [],
