@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Kumbh_Sans } from "next/font/google";
 import "./globals.css";
-
+import { BgBottom, BgTop } from "./component/imgs/bg-top-bottom";
 const KumbhSans = Kumbh_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={KumbhSans.className}>
-        <main className="flex h-screen justify-center items-center bg-Dark-cyan bg-dasktop-bottom">
+        <main className="flex h-screen justify-center items-center bg-Dark-cyan ">
+          <BgTop />
+          <BgBottom />
           {children}
         </main>
       </body>

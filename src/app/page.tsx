@@ -3,7 +3,7 @@ import Card from "./component/Card";
 
 const homePage = () => {
   return (
-    <div>
+    <div className="z-10">
       <Card />
     </div>
   );
